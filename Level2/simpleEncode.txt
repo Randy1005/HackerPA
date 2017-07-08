@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main(){
+	//the original code is encoded with simple statements
+	//don't worry, you've learned these statements in class
+
+	int code[5] = {X,X,X,X,X};
+	int encoded[5];
+	for(int i=0;i<5;i++){
+		encoded[i] = code[i];
+	}
+	for(int i=0;i<5;i++){
+		if(i <= 3){
+			encoded[i] = code[i+1];
+		}
+		if(i == 4){
+			encoded[i] = code[i-4];
+		}
+	}
+
+	//based on the code above, encoded[5] = {6,3,5,8,4}, what is the original code?? 
+}
+
